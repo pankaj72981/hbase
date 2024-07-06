@@ -953,6 +953,7 @@ public class HMaster extends HBaseServerBase<MasterRpcServices> implements Maste
    */
   private void finishActiveMasterInitialization() throws IOException, InterruptedException,
     KeeperException, ReplicationException, DeserializationException {
+    LOG.info("HMaster initialization started - test");
     /*
      * We are active master now... go initialize components we need to run.
      */
